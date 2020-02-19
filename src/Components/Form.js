@@ -16,7 +16,7 @@ const Form = props => {
 
     return (
         <form onSubmit={submitForm}>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name"> Name </label>
             <input 
                 id="name"
                 type="text"
@@ -25,7 +25,7 @@ const Form = props => {
                 onChange={handleChanges}
                 value={member.name}
             />
-            <label htmlFor="title">Title</label>
+            <label htmlFor="title"> Title </label>
             <input
                 id="title"
                 type="text"
@@ -34,7 +34,8 @@ const Form = props => {
                 onChange={handleChanges}
                 value={member.title}
             />
-           <label htmlFor="age">Age</label>
+            <br/><br/>
+           <label htmlFor="age"> Age </label>
             <input
                 id="age"
                 type="number"
@@ -42,7 +43,7 @@ const Form = props => {
                 onChange={handleChanges}
                 value={member.age}
             />
-          <label htmlFor="location">Location</label>
+          <label htmlFor="location"> Location </label>
             <input
                 id="location"
                 type="text"
@@ -51,7 +52,7 @@ const Form = props => {
                 onChange={handleChanges}
                 value={member.location}
             />
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email"> Email </label>
             <input
                 id="email"
                 type="email"
@@ -59,7 +60,8 @@ const Form = props => {
                 name="email"
                 onChange={handleChanges}
                 value={member.email}
-            />
+            /> 
+            <br/><br/>
             <button type="submit">Add Member</button>
         </form>
     )
